@@ -7,40 +7,43 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <img src="../images/cRV1.jpg" alt="Happy Owner with Bear">
     <div class="container">
         <div class="form-container">
-            <h2>Login</h2>
-            <form id="login-form">
-                <label for="login-email">Email:</label>
-                <input type="email" id="login-email" name="login-email" required>
+            <div class="login-box">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
 
-                <label for="login-password">Password:</label>
-                <input type="password" id="login-password" name="login-password" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
 
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+            </div>
         </div>
 
         <div class="form-container" id="registration-form" style="display: none;">
-            <h2>Registration</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="registration-box">
+                <h2>Registration</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
 
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
 
-                <button type="submit">Register</button>
-            </form>
-            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </div>
         </div>
     </div>
 
