@@ -3,68 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopt a Bear: Your New Partner in Crime!</title>
+    <title>Login and Registration</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#"><img src="../images/cute-bear.jpg" alt="Bear Adoption Logo"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Bear-tastic Buddies</a></li>
-                <li><a href="#">Adoption Shenanigans</a></li>
-                <li><a href="#">Contact the Zoo Crew</a></li>
-            </ul>
-        </nav>
-    </header>
+    <img src="../images/cRV1.jpg" alt="Happy Owner with Bear">
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
 
-    <main>
-        <section class="hero">
-            <h1>Ready to Embark on a Bear-illiant Adventure?</h1>
-            <h2>Adopt Your Partner in Mischief Today!</h2>
-            <img src="../images/gunbear.jpg" alt="Bear Wearing Sunglasses">
-        </section>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
 
-        <section class="benefits">
-            <h3>Why Settle for a Regular Pet When You Can Have a Bear?</h3>
-            <ul>
-                <li>Endless Belly Laughs and Bear Hugs</li>
-                <li>Expert Picnic Basket Raider</li>
-                <li>Built-in Fuzzy Alarm Clock</li>
-            </ul>
-        </section>
-
-        <section class="social-proof">
-            <h3>Hear from Our Thrilled Bear Buddies</h3>
-            <blockquote>
-                "My bear and I have the most hilarious inside jokes. He always keeps me on my toes!" - Einstien, probably
-            </blockquote>
-            <img src="../images/grizzly.jpg" alt="Happy Owner with Bear">
-            <img src="../images/grizzly.jpg" alt="Bear Wearing a Party Hat">
-            <img src="../images/grizzly.jpg" alt="Bear Riding a Unicycle">
-        </section>
-
-        <section class="cta">
-            <h3>Ready to Join the Bear Club?</h3>
-            <form>
-                <input type="text" placeholder="Your Name (Bear Nicknames Accepted)">
-                <input type="email" placeholder="Your Email (For Bear-ly Important Updates)">
-                <button type="submit">Gimme My Bear!</button>
+                <button type="submit">Login</button>
             </form>
-            <p>Don't worry, we'll make sure you're pre-beared for the responsibility. Check out our <a href="#">Bear Care Survival Guide</a>.</p>
-        </section>
-    </main>
+            <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+        </div>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">About the Zoo Crew</a></li>
-                <li><a href="#">Bear Necessities Shopping List</a></li>
-                <li><a href="#">Frequently Asked Bear Queries</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 Bear Adoption Extravaganza. All rights reserved (by the bears). We have the right to arm bears.</p>
-    </footer>
+        <div class="form-container" id="registration-form" style="display: none;">
+            <h2>Registration</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
