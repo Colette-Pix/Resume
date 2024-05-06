@@ -3,50 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Registration</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Colette J. Bellard - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+        .header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+        }
+        .left-column {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .right-column {
+            flex: 1;
+            background-color: #444;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #fff;
+        }
+        a {
+            color: #fff;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .align-left {
+            float: left;
+            object-fit: contain;
+            width: 120px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <div class="login-box">
-                <h2>Login</h2>
-                <form id="login-form">
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="login-email" required>
-
-                    <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" name="login-password" required>
-
-                    <button type="submit">Login</button>
-                </form>
-                <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
-            </div>
-        </div>
-
-        <div class="form-container" id="registration-form" style="display: none;">
-            <div class="registration-box">
-                <h2>Registration</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-
-                    <button type="submit">Register</button>
-                </form>
-                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
-            </div>
-        </div>
+    <div class="header">
+        <img src="../images/colette.png" alt="Girl in a jacket" class="align-left">
+        
+   
+        <h1>Colette J. Bellard</h1>
+        <p>Denver, Co | (225)-577-9846 | <a href="mailto:ColetteBellard@gmail.com">ColetteBellard@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/colette-j-b-67226771">linkedin.com/in/colette-j-b-67226771</a> | <a href="https://github.com/Colette-Pix">github.com/Colette-Pix</a></p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="left-column">
+            <h2>Professional Summary:</h2>
+            <ul>
+                <li>Java Full Stack Developer with 5.5 years of experience in Java automated testing.</li>
+                <li>Skilled in training new testers, optimizing workflows, and collaborating with cross-functional teams to deliver high-quality software solutions</li>
+                <li>Proactive in adopting agile methodologies to enhance process efficiency and product reliability</li>
+                <li>Innovative problem-solver, combining strong technical skills with creativity to tackle complex challenges and deliver robust, scalable solutions</li>
+            </ul>
+    
+            <h2>Certificates/Training/Education:</h2>
+            <ul>
+                <li>Per Scholas powered by TEKsystems, Full Stack Java Developer, Remote | Apr 2024 - June 2024
+                    <ul>
+                        <li>Instructor-led course, 40 hours per week lasting 15 weeks.</li>
+                        <li>Hands-on training in JUnit, Spring framework, Spring Boot, SQL, and Java.</li>
+                        <li>Javascript, HTML, CSS hands-on training</li>
+                        <li>JDBC, ORM, and Hibernate training with lecture and activities</li>
+                        <li>CICD, Github, Web Services and Microservices</li>
+                    </ul>
+                </li>
+                <li>Louisiana State University and A&amp;M College, B.S. in Computer Science, B.A. in English, Baton Rouge, LA | August 2019 - May 2016</li>
+            </ul>
+    
+            <h2>Projects:</h2>
+            <h3>Per Scholas Capstone (placeholder)</h3>
+            <h3>Developer / Owner</h3>
+            <p>Astrotyrant | August 2022 - present | <a href="http://astrotyrant.com">Astrotyrant.com</a></p>
+            <ul>
+                <li>Developed a C# game on Unity</li>
+                <li>Ran and managed a small business.</li>
+                <li>Worked with marketing team to launch Indiegogo.</li>
+            </ul>
+    
+            <h2>Experience:</h2>
+            <h3>Quality Assurance Curriculum Developer</h3>
+            <p>Per Scholas, Remote | June 2022 - July 2022</p>
+            <ul>
+                <li>Developed a comprehensive curriculum for a QA Automation Engineer Course.</li>
+                <li>Tailored course content to meet the evolving needs of the industry and students.</li>
+            </ul>
+    
+            <h3>Quality Assurance Engineer</h3>
+            <p>Powerley, Royal Oak, MI | May 2018 – Oct 2021</p>
+            <ul>
+                <li>Developed and maintained automated test scripts for software applications.</li>
+                <li>Collaborated closely with development teams to ensure software quality.</li>
+                <li>Programmed in Java.</li>
+            </ul>
+    
+            <h3>Automation Test Specialist</h3>
+            <p>IBM, East Lansing, MI | Jun 2016 - May 2018</p>
+            <ul>
+                <li>Created automated tests for customers, enhancing software functionality and reliability.</li>
+                <li>Provided consultation to customers, ensuring alignment of tests with business requirements. Worked with such companies as TMobile, Thompson Reuters, Food Lion, and Medtronics.</li>
+                <li>Programmed in Java</li>
+            </ul>
+        </div>
+    
+        <div class="right-column">
+            <h2>Technical Skills:</h2>
+            <ul>
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>Spring framework</li>
+                <li>Spring Boot</li>
+                <li>Eclipse</li>
+                <li>Visual Studio Code</li>
+                <li>JDBC</li>
+                <li>ORM</li>
+                <li>Hibernate</li>
+                <li>Github</li>
+                <li>Unity</li>
+                <li>Selenium</li>
+                <li>Appium</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
